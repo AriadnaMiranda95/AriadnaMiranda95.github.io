@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          grid-template-rows: repeat(3, auto);
+          width: 95%;
+          margin: 100px;
+        }
+
+        img:nth-child(1) {
+            transition: 2s ease-in;
+        }
+
+        img:nth-child(1):hover { /* se aplica cuando se está sobre el elemento */
+            transform: translate(100px, 20px) scale(.25, .5) rotate3d(1,1,0,90deg);
+        }
+
+        img:nth-child(1):active { /* se aplica cuando se mantiene pulsado el botón derecho del ratón */
+            transform: scale(10, 10);
+        }
+    </style>
+</head>
+<body>
+    <h1>ejercicio de transformaciones</h1>
+    <p>Aplica diferentes transformaciones a las imágenes de Doraemon. Usa
+        rotate, skew, translate, perspective, transitions, combinaciones de las 
+        anteriores. Define estilos que se apliquen cuando
+        el ratón se encuentre encima de la image.
+    </p>
+    <p>¿Te atrevés a crear un dado donde las 6 caras sea diferentes imágenes 
+        de Doraemon?
+    </p>
+    <div>
+        <img src="doraemon.png" alt="doraemon">
+        <img src="doraemon.png" alt="doraemon">
+        <img src="doraemon.png" alt="doraemon">
+        <img src="doraemon.png" alt="doraemon">
+        <img src="doraemon.png" alt="doraemon">
+        <img src="doraemon.png" alt="doraemon">
+    </div>
+    
+</body>
+</html>
